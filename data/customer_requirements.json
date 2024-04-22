@@ -1,0 +1,200 @@
+{
+  "tx_power": [
+    {
+      "mode": "all",
+      "units": "watt",
+      "required": {
+        "value": 1000,
+        "range": "le"
+      },
+      "goal": {
+        "value": 10,
+        "range": "le"
+      }
+    }
+  ],
+  "tx_duty_cycle": [
+    {
+      "mode": "search",
+      "units": "percent",
+      "required": {
+        "value": 0.04,
+        "range": "le"
+      }
+    },
+    {
+      "mode": "doppler",
+      "units": "percent",
+      "required": {
+        "value": 0.10,
+        "range": "le"
+      }
+    }
+  ],
+  "ant_bs_grazing_ang_far": [
+    {
+      "mode": "all",
+      "units": "degree",
+      "required": {
+        "value": 2,
+        "range": "ge"
+      }
+    }
+  ],
+  "ant_dim_azim": [
+    {
+      "mode": "all",
+      "units": "meter",
+      "required": {
+        "value": 1,
+        "range": "le"
+      },
+      "goal": {
+        "value": 0.1,
+        "range": "le"
+      }
+    }
+  ],
+  "ant_dim_elev": [
+    {
+      "mode": "all",
+      "units": "meter",
+      "required": {
+        "value": 1,
+        "range": "le"
+      },
+      "goal": {
+        "value": 0.1,
+        "range": "le"
+      }
+    }
+  ],
+  "swath_width": [
+    {
+      "mode": "all",
+      "units": "kilometer",
+      "required": {
+        "value": 10,
+        "range": "ge"
+      },
+      "goal": {
+        "value": 100,
+        "range": "ge"
+      }
+    }
+  ],
+  "ant_spin_rate": [
+    {
+      "mode": "all",
+      "units": "rpm",
+      "required": {
+        "value": 180,
+        "range": "le"
+      },
+      "goal": {
+        "value": 30,
+        "range": "le"
+      }
+    }
+  ],
+  "scan_qty_on_tgt_intent": [
+    {
+      "mode": "all",
+      "units": "quantity",
+      "required": {
+        "value": 4,
+        "range": "ge"
+      },
+      "goal": {
+        "value": 15,
+        "range": "ge"
+      }
+    }
+  ],
+  "tx_prf": [
+    {
+      "mode": "all",
+      "units": "hertz",
+      "required": {
+        "value": 500000,
+        "range": "le"
+      }
+    }
+  ],
+  "fov_range": [
+    {
+      "mode": "all",
+      "units": "meter",
+      "required": {
+        "value": 6,
+        "range": "ge"
+      }
+    }
+  ],
+  "fov_azimuth": [
+    {
+      "mode": "all",
+      "units": "meter",
+      "required": {
+        "value": 6,
+        "range": "ge"
+      }
+    }
+  ],
+  "tfa_tspin_ratio": [
+    {
+      "mode": "all",
+      "units": "ratio",
+      "required": {
+        "value": 10,
+        "range": "ge"
+      }
+    }
+  ],
+  "tgt_det": [
+    {
+      "mode": "single",
+      "units": "probability",
+      "required": {
+        "value": 0.55,
+        "range": "ge"
+      }
+    },
+    {
+      "mode": "multi_2_of_4",
+      "units": "probability",
+      "goal": {
+        "value": 0.95,
+        "range": "ge"
+      }
+    }
+  ],
+  "t_warn": [
+    {
+      "mode": "all",
+      "units": "second",
+      "required": {
+        "value": 10,
+        "range": "ge"
+      },
+      "goal": {
+        "value": 300,
+        "range": "ge"
+      }
+    }
+  ],
+  "doppler_precision": [
+    {
+      "mode": "doppler",
+      "units": "hertz",
+      "required": {
+        "value": 700,
+        "range": "le"
+      },
+      "goal": {
+        "value": 50,
+        "range": "le"
+      }
+    }
+  ]
+}
